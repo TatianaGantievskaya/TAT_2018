@@ -13,7 +13,7 @@ namespace TheLongestSubsequence
       {
         Sequence inputString = new Sequence(args[0]);
         InformationOutput output = new InformationOutput();
-        output.PrintInfoAboutMaxAmountOfTheSameConsecutiveSymbols(output.BuildTheOutputString(inputString.FindTheLongestSubsequence()));
+        output.PrintInfoAboutMaxAmountOfTheIdenticalConsecutiveSymbols(output.BuildTheOutputString(inputString.FindTheLongestSubsequence()));
       }
       catch (Exception ex)
       {
