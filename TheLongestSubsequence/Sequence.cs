@@ -22,7 +22,7 @@
     /// <summary>
     /// This method finds the longest subsequence of the same consecutive symbols.
     /// </summary>
-    /// <returns> It returns the value, which reflects the maximum length of the subsequence. </returns>
+    /// <returns> It returns maximum subsequence length. </returns>
     public int FindTheLongestSubsequence()
     {
       int amountOfTheSameSymbols = 1;
