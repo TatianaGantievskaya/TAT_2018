@@ -1,0 +1,7 @@
+C:\Users\Таня\Documents\GitHub\TAT_2018\TheLongestSubsequence\bin\Debug\TheLongestSubsequence.exe.config
+C:\Users\Таня\Documents\GitHub\TAT_2018\TheLongestSubsequence\bin\Debug\TheLongestSubsequence.exe
+C:\Users\Таня\Documents\GitHub\TAT_2018\TheLongestSubsequence\bin\Debug\TheLongestSubsequence.pdb
+C:\Users\Таня\Documents\GitHub\TAT_2018\TheLongestSubsequence\obj\Debug\TheLongestSubsequence.csprojResolveAssemblyReference.cache
+C:\Users\Таня\Documents\GitHub\TAT_2018\TheLongestSubsequence\obj\Debug\TheLongestSubsequence.csproj.CoreCompileInputs.cache
+C:\Users\Таня\Documents\GitHub\TAT_2018\TheLongestSubsequence\obj\Debug\TheLongestSubsequence.exe
+C:\Users\Таня\Documents\GitHub\TAT_2018\TheLongestSubsequence\obj\Debug\TheLongestSubsequence.pdb

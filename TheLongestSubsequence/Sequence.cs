@@ -22,7 +22,11 @@ namespace TheLongestSubsequence
       EnteredSequence = sequence;
     }
 
-    protected int FindTheLongestSubsequence()
+    /// <summary>
+    /// This method finds the longest subsequence of the same consecutive symbols.
+    /// </summary>
+    /// <returns> It returns the value, which reflects the maximum length of the subsequence. </returns>
+    public int FindTheLongestSubsequence()
     {
       int amountOfTheSameSymbols = 1;
       int counter = 1;
@@ -44,7 +48,12 @@ namespace TheLongestSubsequence
       return amountOfTheSameSymbols;
     }
 
-    protected string BuildTheOutputString(int theLongestSubsequence)
+    /// <summary>
+    /// This method was created for building the output message.
+    /// </summary>
+    /// <param name="theLongestSubsequence"> The maximum length of subsequence. </param>
+    /// <returns> It returns builded output string. </returns>
+    public string BuildTheOutputString(int theLongestSubsequence)
     {
       StringBuilder outputString = new StringBuilder();
       outputString.Append("The maximum number of identical consecutive characters in the string: ").Append(theLongestSubsequence);
@@ -55,9 +64,10 @@ namespace TheLongestSubsequence
     /// The method, which outputs the information about the maximum length of a subsequence 
     /// of the same consecutive symbols containing in the input string.
     /// </summary>
-    public void GetMaxAmountOfTheSameConsecutiveSymbols()
+    /// <param name="outputMessage"> The created message about the maximum length of subsequence. </param>
+    public void GetMaxAmountOfTheSameConsecutiveSymbols(string outputMessage)
     {
-      Console.WriteLine(BuildTheOutputString(FindTheLongestSubsequence()));
+      Console.WriteLine(outputMessage);
     }
   }
 }
