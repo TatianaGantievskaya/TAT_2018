@@ -44,9 +44,8 @@ namespace TheLongestSubsequence
       return amountOfTheSameSymbols;
     }
 
-    protected string BuildTheOutputString()
+    protected string BuildTheOutputString(int theLongestSubsequence)
     {
-      int theLongestSubsequence = FindTheLongestSubsequence();
       StringBuilder outputString = new StringBuilder();
       outputString.Append("The maximum number of identical consecutive characters in the string: ").Append(theLongestSubsequence);
       return outputString.ToString();
@@ -58,8 +57,7 @@ namespace TheLongestSubsequence
     /// </summary>
     public void GetMaxAmountOfTheSameConsecutiveSymbols()
     {
-      string outputString = BuildTheOutputString();
-      Console.WriteLine(outputString);
+      Console.WriteLine(BuildTheOutputString(FindTheLongestSubsequence()));
     }
   }
 }

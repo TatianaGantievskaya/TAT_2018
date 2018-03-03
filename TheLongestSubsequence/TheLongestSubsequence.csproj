@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{136D9E59-455E-4A59-B0C3-B05D6F3EFE6D}</ProjectGuid>
+    <ProjectGuid>{798D9B7B-8368-4AC1-BF6D-3263043268B3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>TheLongestSubsequence</RootNamespace>
     <AssemblyName>TheLongestSubsequence</AssemblyName>

@@ -14,7 +14,7 @@ namespace TheLongestSubsequence
         Sequence inputString = new Sequence(args[0]);
         inputString.GetMaxAmountOfTheSameConsecutiveSymbols();
       }
-      catch(Exception ex)
+      catch (Exception ex)
       {
         Console.WriteLine(ex.Message);
       }
