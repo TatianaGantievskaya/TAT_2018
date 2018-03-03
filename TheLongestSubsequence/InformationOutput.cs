@@ -25,7 +25,7 @@ namespace TheLongestSubsequence
     /// of the same consecutive symbols containing in the input string.
     /// </summary>
     /// <param name="outputMessage"> The created message about the maximum length of subsequence. </param>
-    public void GetMaxAmountOfTheSameConsecutiveSymbols(string outputMessage)
+    public void GetInfoAboutMaxAmountOfTheSameConsecutiveSymbols(string outputMessage)
     {
       Console.WriteLine(outputMessage);
     }
