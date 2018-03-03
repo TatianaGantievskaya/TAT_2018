@@ -20,12 +20,12 @@
     }
 
     /// <summary>
-    /// This method finds the longest subsequence of the same consecutive symbols.
+    /// This method finds the longest subsequence of the identical consecutive symbols.
     /// </summary>
     /// <returns> It returns maximum subsequence length. </returns>
     public int FindTheLongestSubsequence()
     {
-      int amountOfTheSameSymbols = 1;
+      int amountOfTheIdenticalSymbols = 1;
       int counter = 1;
       for (int i = 0; i < EnteredSequence.Length - 1; i++)
       {
@@ -35,14 +35,14 @@
         }
         if (!EnteredSequence[i].Equals(EnteredSequence[i + 1]) || i.Equals(EnteredSequence.Length - 2))
         {
-          if (amountOfTheSameSymbols < counter)
+          if (amountOfTheIdenticalSymbols < counter)
           {
-            amountOfTheSameSymbols = counter;
+            amountOfTheIdenticalSymbols = counter;
           }
           counter = 1;
         }
       }
-      return amountOfTheSameSymbols;
+      return amountOfTheIdenticalSymbols;
     }
   }
 }
