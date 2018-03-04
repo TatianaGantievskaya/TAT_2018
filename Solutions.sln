@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLongestSubsequence", "TheLongestSubsequence\TheLongestSubsequence.csproj", "{798D9B7B-8368-4AC1-BF6D-3263043268B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifiedString", "..\..\ModifiedString\ModifiedString\ModifiedString.csproj", "{63BEFA4B-8D40-45D0-A63B-D4FAD5777B2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifiedString", "ModifiedString\ModifiedString.csproj", "{63BEFA4B-8D40-45D0-A63B-D4FAD5777B2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
