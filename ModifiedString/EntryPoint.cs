@@ -14,7 +14,7 @@ namespace ModifiedString
       {
         Console.WriteLine("Enter your string: ");
         inputString = Console.ReadLine();
-        if (inputString.Equals(string.Empty))
+        if (string.IsNullOrEmpty(inputString))
         {
           Console.WriteLine("\nYour string is empty. If you want to exit the program, press 'escape' key. If you want to try to enter your string again, press any key besides 'escape'.");
           if ((Console.ReadKey().Key).Equals(ConsoleKey.Escape))
@@ -23,8 +23,8 @@ namespace ModifiedString
           }
         }
       }
-      StringProcessing outputString = new StringProcessing();
-      Console.WriteLine(outputString.ProcessTheString(inputString));
+      StringCreator outputString = new StringCreator();
+      Console.WriteLine(outputString.CreateTheString(inputString));
     }
   }
 }

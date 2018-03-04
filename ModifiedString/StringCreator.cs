@@ -3,23 +3,23 @@
 namespace ModifiedString
 {
   /// <summary>
-  /// This class was created for work with the input string.
+  /// This class was made for creating a new string based on the input string.
   /// </summary>
-  class StringProcessing
+  class StringCreator
   {
     /// <summary>
-    /// This method processes the input string.
+    /// This method creates new, output, string.
     /// </summary>
     /// <param name="inputString"> It is a string entered by user. </param>
     /// <returns> It returns new, modificated, string. </returns>
-    public string ProcessTheString(string inputString)
+    public string CreateTheString(string inputString)
     {
-      StringBuilder modificatedString = new StringBuilder();
+      StringBuilder outputString = new StringBuilder();
       for (int i = 0; i < inputString.Length; i = i + 2)
       {
-        modificatedString.Append(inputString[i]);
+        outputString.Append(inputString[i]);
       }
-      return modificatedString.ToString();
+      return outputString.ToString();
     }
   }
 }
