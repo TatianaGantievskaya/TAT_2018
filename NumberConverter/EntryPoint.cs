@@ -12,16 +12,13 @@ namespace NumberConverter
       try
       {
         Converter convertibleNumber = new Converter(args[0], args[1]);
-        Console.WriteLine(convertibleNumber.ConvertNumberToSelectedNumeralSystem(convertibleNumber.ChooseTheNumeralSystem()));
-      }
-      catch (ConvertingException rex)
-      {
-        Console.WriteLine(rex.Message);
+        Console.WriteLine(convertibleNumber.ConvertNumberToSelectedNumeralSystem());
       }
       catch (Exception ex)
       {
         Console.WriteLine(ex.Message);
       }
+      Console.ReadKey();
     }
   }
 }
