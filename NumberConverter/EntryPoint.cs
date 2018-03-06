@@ -18,7 +18,6 @@ namespace NumberConverter
       {
         Console.WriteLine(ex.Message);
       }
-      Console.ReadKey();
     }
   }
 }
