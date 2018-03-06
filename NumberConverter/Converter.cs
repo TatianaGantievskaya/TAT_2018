@@ -48,7 +48,7 @@ namespace NumberConverter
       while (convertibleNumber != 0)
       {
         Int64 temporaryVariable = convertibleNumber / radix;
-        char calculatedVariable = chosenNumeralSystem[Convert.ToInt32(Math.Abs(convertibleNumber) - radix * Math.Abs(temporaryVariable))];
+        char calculatedVariable = chosenNumeralSystem[Convert.ToInt32(convertibleNumber - radix * temporaryVariable)];
         convertedNumber.Append(calculatedVariable);
         convertibleNumber = temporaryVariable;
       }
