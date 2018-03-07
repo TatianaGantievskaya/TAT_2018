@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Numerics;
 
 namespace NumberConverter
 {
@@ -8,21 +9,25 @@ namespace NumberConverter
   /// </summary>
   class Converter
   {
-    private Int64 convertibleNumber;
+    private BigInteger convertibleNumber;
     private int radix;
 
     /// <summary>
-    /// Constructor with the parameters, which initializes class's fields.
+    /// Constructor, which initializes class's fields.
     /// </summary>
     /// <param name="numberToConvert"> Number, which user wants to convert. </param>
     /// <param name="basisForConverting"> Radix. </param>
     public Converter(string numberToConvert, string basisForConverting)
     {
-      convertibleNumber = Convert.ToInt64(numberToConvert);
-      radix = Convert.ToInt32(basisForConverting);
-      if (radix < 2 || radix > 20 || convertibleNumber <= 0)
+      convertibleNumber = BigInteger.Parse(numberToConvert);
+      radix = int.Parse(basisForConverting);
+      if (radix < 2 || radix > 20)
       {
-        throw new Exception("You entered wrong radix or incorrect convertible number.");
+        throw new Exception("Error, you entered wrong radix.");
+      }
+      if (convertibleNumber <= 0)
+      {
+        throw new Exception("Error, you entered incorrect convertible number.");
       }
     }
 
@@ -35,8 +40,8 @@ namespace NumberConverter
       StringBuilder convertedNumber = new StringBuilder();
       while (convertibleNumber != 0)
       {
-        Int64 temporaryVariable = convertibleNumber / radix;
-        Int64 calculatedVariable = convertibleNumber - radix * temporaryVariable;
+        BigInteger temporaryVariable = convertibleNumber / radix;
+        BigInteger calculatedVariable = convertibleNumber - radix * temporaryVariable;
         if (calculatedVariable > 9)
         {
           convertedNumber.Append((char)(calculatedVariable + 55));
