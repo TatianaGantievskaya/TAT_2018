@@ -1,7 +1,0 @@
-C:\Users\Таня\Documents\GitHub\TAT_2018\ModifiedString\bin\Debug\ModifiedString.exe.config
-C:\Users\Таня\Documents\GitHub\TAT_2018\ModifiedString\bin\Debug\ModifiedString.exe
-C:\Users\Таня\Documents\GitHub\TAT_2018\ModifiedString\bin\Debug\ModifiedString.pdb
-C:\Users\Таня\Documents\GitHub\TAT_2018\ModifiedString\obj\Debug\ModifiedString.csprojResolveAssemblyReference.cache
-C:\Users\Таня\Documents\GitHub\TAT_2018\ModifiedString\obj\Debug\ModifiedString.csproj.CoreCompileInputs.cache
-C:\Users\Таня\Documents\GitHub\TAT_2018\ModifiedString\obj\Debug\ModifiedString.exe
-C:\Users\Таня\Documents\GitHub\TAT_2018\ModifiedString\obj\Debug\ModifiedString.pdb
