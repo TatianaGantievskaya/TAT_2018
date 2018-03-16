@@ -5,7 +5,7 @@ namespace ModifiedString
   /// <summary>
   /// This class was made for creating a new string based on the input string.
   /// </summary>
-  class StringCreator
+  public class StringCreator
   {
     /// <summary>
     /// This method creates new, output, string.
