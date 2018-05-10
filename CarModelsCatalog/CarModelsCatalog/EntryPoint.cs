@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -11,13 +12,20 @@ namespace CarModelsCatalog
     {
       IWebDriver driver = new ChromeDriver();
       MainPage mainPage = new MainPage(driver);
-      BrandPage brandPage = mainPage.ValidateTheExistanceAndGoToTheBrandPage(driver, args[0]);
-      List<Model> listOfModels = new List<Model>();
-      foreach(var model in driver.FindElements(By.XPath("//ul[@class='brandslist']//li//a")))
+      try
       {
-        listOfModels.Add(new Model(model.FindElement(By.TagName("span")).Text, int.Parse(model.FindElement(By.TagName("small")).Text)));
+        BrandPage brandPage = mainPage.ValidateTheExistanceAndGoToTheBrandPage(driver, args[0]);
+        List<Model> listOfModels = new List<Model>();
+        foreach (var model in driver.FindElements(By.XPath("//ul[@class='brandslist']//li//a")))
+        {
+          listOfModels.Add(new Model(model.FindElement(By.TagName("span")).Text, int.Parse(model.FindElement(By.TagName("small")).Text)));
+        }
+        InformationOutput.PrintTheListOfModels(listOfModels.OrderByDescending(model => model.CarsAmount).ToList());
       }
-      InformationOutput.PrintTheListOfModels(listOfModels.OrderByDescending(model => model.CarsAmount).ToList());
+      catch(Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+      }
       driver.Quit();
     }
   }
